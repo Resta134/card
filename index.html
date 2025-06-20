@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Step 1 -->
+    <div id="step1" class="step active">
+      <h1 class="title typewriter-text" id="hb-text">Happy Birthday Umi Hedarrr!</h1>
+      <button onclick="nextStep(2)">Selengkapnya</button>
+    </div>
+
+    <!-- Step 2 -->
+    <div id="step2" class="step">
+      <img src="cake.jpg" alt="Birthday Cake" class="cake-img">
+      <button onclick="nextStep(3)">Next</button>
+    </div>
+
+    <!-- Step 3 -->
+    <div id="step3" class="step">
+      <p class="typewriter-text" id="doa-text"></p>
+      <button onclick="nextStep(4)">Next</button>
+    </div>
+
+    <!-- Step 4 -->
+    <div id="step4" class="step">
+      <p class="typewriter-text" id="harapan-text"></p>
+      <button onclick="nextStep(5)">Next</button>
+    </div>
+
+    <!-- Step 5 -->
+    <div id="step5" class="step">
+      <p class="typewriter-text" id="pesan-text"></p>
+      <button onclick="nextStep(6)">Next</button>
+    </div>
+
+    <!-- Step 6 -->
+    <div id="step6" class="step">
+      <p class="typewriter-text" id="pesan1-text"></p>
+      <button onclick="nextStep(7)">Finish</button>
+    </div>
+
+    <!-- Step 7 -->
+    <div id="step7" class="step">
+      <h2>Terima kasih sudah melihat ucapan ini!</h2>
+    </div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="happybirthday.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
